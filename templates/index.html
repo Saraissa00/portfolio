@@ -180,7 +180,7 @@
       <ul>
         <li>Builds raw DNS query packets from scratch using Python's <code>struct</code> module — no external DNS library.</li>
         <li>Sends parallel UDP queries to the local resolver and to Google's trusted public DNS (8.8.8.8).</li>
-        <li>Compares responses across four authoritative domains (iana.org, internic.net, ietf.org, ripe.net) and flags a mismatch outside the same /24 subnet as hijacking, per RFC 1035.</li>
+        <li>Compares responses across four authoritative domains (iana.org, internic.net, ietf.org, ripe.net) and flags a mismatch outside the same /24 subnet as hijacking.</li>
       </ul>
       <h5>Stack</h5>
       <p class="stack-line">Python 3 (raw sockets, <b>struct</b>) · Flask web dashboard · CLI · zero external dependencies</p>
