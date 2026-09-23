@@ -193,27 +193,6 @@
     </div>
 
     <div class="proj">
-      <div class="proj-head"><h3>HR Employee Attrition Predictor</h3><span class="cat">Machine Learning</span></div>
-      <p class="tagline">An MLP neural network that forecasts whether an employee is about to quit, with a from-scratch backpropagation module underneath it.</p>
-      <h5>Objective</h5>
-      <p class="body-text">HR teams often spot flight-risk employees too late. The goal: turn satisfaction score, tenure, workload, and promotion history into an instant, explainable turnover forecast.</p>
-      <h5>Key features</h5>
-      <ul>
-        <li>Trained an MLPClassifier (9 inputs → 6 → 5 hidden neurons → 1 output) on 14,999 real employee records, split 70/30 for train/test.</li>
-        <li>Three-stage pipeline: <code>python1.py</code> trains and pickles the model, <code>use_the_brain.py</code> loads it for instant inference, <code>Frontend.py</code> serves a Gradio web UI for HR staff.</li>
-        <li>A separate <code>backprop_python2.py</code> implements forward pass, loss, and weight updates in raw NumPy — no ML library — solving XOR to demonstrate the underlying math.</li>
-      </ul>
-      <h5>Stack</h5>
-      <p class="stack-line">Python · scikit-learn · pandas / NumPy · joblib · Gradio</p>
-      <h5>Results</h5>
-      <p class="results"><b>96.84% test accuracy</b> on a held-out 30% split of 14,999 employee records.</p>
-      <div class="proj-links">
-        <a href="{{ url_for('static', filename='hr-attrition-screenshot.png') }}" target="_blank" rel="noopener">See Project →</a>
-        <a href="https://github.com/Saraissa00/HR-Employee-Attrition-Predictor" target="_blank" rel="noopener">GitHub Repo →</a>
-      </div>
-    </div>
-
-    <div class="proj">
       <div class="proj-head"><h3>Chatbot — Document-Aware AI Assistant</h3><span class="cat">Full-Stack AI</span></div>
       <p class="tagline">A zero-build FastAPI chatbot that answers freely, or strictly from a document you upload — and never goes down when one free API quota runs dry.</p>
       <h5>Objective</h5>
@@ -231,6 +210,27 @@
       <div class="proj-links">
         <a href="https://chatbot-nxuj.onrender.com/" target="_blank" rel="noopener">Open Project →</a>
         <a href="https://github.com/Saraissa00/chatbot" target="_blank" rel="noopener">GitHub Repo →</a>
+      </div>
+    </div>
+
+    <div class="proj">
+      <div class="proj-head"><h3>HR Employee Attrition Predictor</h3><span class="cat">Machine Learning</span></div>
+      <p class="tagline">An MLP neural network that forecasts whether an employee is about to quit, with a from-scratch backpropagation module underneath it.</p>
+      <h5>Objective</h5>
+      <p class="body-text">HR teams often spot flight-risk employees too late. The goal: turn satisfaction score, tenure, workload, and promotion history into an instant, explainable turnover forecast.</p>
+      <h5>Key features</h5>
+      <ul>
+        <li>Trained an MLPClassifier (9 inputs → 6 → 5 hidden neurons → 1 output) on 14,999 real employee records, split 70/30 for train/test.</li>
+        <li>Three-stage pipeline: <code>python1.py</code> trains and pickles the model, <code>use_the_brain.py</code> loads it for instant inference, <code>Frontend.py</code> serves a Gradio web UI for HR staff.</li>
+        <li>A separate <code>backprop_python2.py</code> implements forward pass, loss, and weight updates in raw NumPy — no ML library — solving XOR to demonstrate the underlying math.</li>
+      </ul>
+      <h5>Stack</h5>
+      <p class="stack-line">Python · scikit-learn · pandas / NumPy · joblib · Gradio</p>
+      <h5>Results</h5>
+      <p class="results"><b>96.84% test accuracy</b> on a held-out 30% split of 14,999 employee records.</p>
+      <div class="proj-links">
+        <a href="{{ url_for('static', filename='hr-attrition-screenshot.png') }}" target="_blank" rel="noopener">See Project →</a>
+        <a href="https://github.com/Saraissa00/HR-Employee-Attrition-Predictor" target="_blank" rel="noopener">GitHub Repo →</a>
       </div>
     </div>
 
