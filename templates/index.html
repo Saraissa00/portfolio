@@ -217,7 +217,8 @@
         <li>Two modes toggled in-page: General Chat and From Document (.txt, .pdf, .docx, .csv), which refuses to answer outside the file's content.</li>
         <li>Remembers the last 10 exchanges, so follow-up questions resolve naturally without re-supplying context.</li>
         <li>Automatic three-way provider fallback (Gemma via OpenRouter → backup model → Groq) so the bot keeps answering when a free quota is exhausted, with a visible "via OpenRouter / via Groq" tag on each reply.</li>
-        <li>Pattern-matched instant greetings that skip the API call, and a plain REST endpoint for scripting or external test tools.</li>
+        <li>Recognizes greetings like "hi" or "thanks" instantly by pattern-matching, without calling the AI — faster and free.</li>
+        <li>Exposes a plain REST API endpoint, so any external tool or script can send it questions directly.</li>
       </ul>
       <h5>Stack</h5>
       <p class="stack-line">FastAPI · HTML/JS · OpenRouter · Groq · Render</p>
