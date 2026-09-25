@@ -37,3 +37,4 @@ gunicorn app:app
 ```
 
 To update the CV, replace `static/resume.pdf` with the same filename.
+
